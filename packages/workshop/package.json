@@ -1,0 +1,30 @@
+{
+  "name": "@scc/workshop",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "nodemon --exec 'storybook dev -p 6006'",
+    "lint": "eslint . 'src/**/*.{ts,tsx,js}'",
+    "resetDependencies": "rm -rf node_modules",
+    "precommit": "pnpm lint && npx tsc -p ."
+  },
+  "dependencies": {
+    "@scc/components": "workspace:*"
+  },
+  "devDependencies": {
+    "@scc/eslint-config": "workspace:*",
+    "@storybook/addon-essentials": "^7.6.4",
+    "@storybook/addon-interactions": "^7.6.4",
+    "@storybook/addon-links": "^7.6.4",
+    "@storybook/blocks": "^7.6.4",
+    "@storybook/cli": "^7.6.4",
+    "@storybook/react": "^7.6.4",
+    "@storybook/react-vite": "^7.6.4",
+    "@storybook/test": "^7.6.4",
+    "@vitejs/plugin-react": "^4.2.1",
+    "eslint-plugin-storybook": "^0.6.15",
+    "storybook": "^7.6.4",
+    "vite": "^5.0.8"
+  }
+}
