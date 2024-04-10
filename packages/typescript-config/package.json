@@ -1,0 +1,13 @@
+{
+  "name": "@scc/typescript-config",
+  "version": "0.0.0",
+  "private": true,
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "resetDependencies": "rm -rf node_modules"
+  },
+  "files": ["base.json", "nextjs.json", "node.json", "react-library.json"]
+}
